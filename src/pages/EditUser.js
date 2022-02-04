@@ -38,7 +38,7 @@ const EditUser = () => {
         }
         else {
             dispatch(updateUser(state, id));
-            navigate("/home");
+            navigate("/");
             setError("");
         }
     }
@@ -100,7 +100,7 @@ const EditUser = () => {
                 />
 
                 <Stack spacing={2} direction="row" style={{display: "flex", alignItems: "center", justifyContent: "center", width: "100vw", marginLeft: "-95px"}}>
-                <Button variant="outlined" onClick={() => navigate("/home")}>Cancel</Button>
+                <Button variant="outlined" onClick={() => navigate("/")}>Cancel</Button>
                     <Button variant="contained" color="success" type="submit">Update</Button>
                 </Stack>
             </Box>
